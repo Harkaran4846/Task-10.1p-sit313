@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(cors()); // Enable CORS
+app.use(cors()); 
 
 // Nodemailer function for sending the welcome email
 async function sendMail(toEmail) {
@@ -13,7 +13,7 @@ async function sendMail(toEmail) {
         service: 'gmail',
         auth: {
             user: 'harkaran687@gmail.com',
-            pass: 'yuhourdgsxgyqeik',  // Use environment variables for security
+            pass: 'yuhourdgsxgyqeik', 
         },
     });
 
